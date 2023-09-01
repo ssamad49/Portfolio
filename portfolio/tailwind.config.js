@@ -1,12 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    './public/**/*.html',
+    './src/**/*.{js,jsx,ts,tsx,vue}',
+  ],
+  // darkMode: media, // or 'media' or 'class'
+  darkMode: 'media',
+
   theme: {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+        // green: colors.emerald,
+        // yellow: colors.amber,
+        // purple: colors.violet,
+    },
   },
   plugins: [],
 }
