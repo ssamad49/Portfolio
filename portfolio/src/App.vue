@@ -23,8 +23,8 @@ import HelloWorld from './components/HelloWorld.vue'
       <span class="ml-3 text-xl">Tailblocks</span>
     </a>
     <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-white">First Link</a>
-      <a class="mr-5 hover:text-white">Second Link</a>
+      <router-link class="mr-5 hover:text-white" to="/">Home</router-link>
+      <router-link class="mr-5 hover:text-white" to="/about">About</router-link>
       <a class="mr-5 hover:text-white">Third Link</a>
       <a class="mr-5 hover:text-white">Fourth Link</a>
     </nav>
